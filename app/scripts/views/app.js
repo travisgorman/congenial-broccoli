@@ -11,7 +11,9 @@ function app() {
       <button id="logoutBtn"> Log Out </button>
     </header>
     `)
+  console.log( `welcome ${session.username}` );
   let logout = $app.find('#logoutBtn')
+
   logout.on('click', function (e) {
     console.log( 'log out', e );
      $.ajax({
@@ -28,7 +30,7 @@ function app() {
   })
  
 
-  
+
 
   return $app
 }
