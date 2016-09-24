@@ -1,3 +1,38 @@
+.addContactForm {
+  display: flex;
+  background: #D6364D;
+  justify-content: center; }
+
+.form-control {
+  width: 100%; }
+
+.formButtons {
+  display: flex;
+  justify-content: center;
+  background: #D6364D; }
+
+.newContact {
+  margin: 1rem; }
+
+input[type="text"].addNew {
+  padding: .5rem;
+  border: none;
+  border-radius: .25rem;
+  font-size: .8rem;
+  margin: 1rem; }
+
+input[type="button"].addNew {
+  padding: .8rem 2.5rem;
+  border: .5px solid #fff;
+  background: #D6364D;
+  border-radius: .25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: .8rem;
+  color: #fff; }
+  input[type="button"].addNew:active, input[type="button"].addNew:hover, input[type="button"].addNew:focus {
+    background: #FA6F57; }
+
 * {
   font-family: sans-serif;
   margin: 0;
@@ -28,6 +63,8 @@ h1 {
   .logoutBtn:hover, .addNewBtn:hover {
     background: #bae7e4;
     cursor: pointer; }
+  .logoutBtn:active, .logoutBtn:focus, .addNewBtn:active, .addNewBtn:focus {
+    border: none; }
 
 main {
   height: 100vh;
@@ -37,20 +74,9 @@ main {
 .contact {
   display: flex;
   width: 80%;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 1.4rem auto;
+  padding: .75rem;
   background: #BD293F; }
-
-li.detail {
-  display: inline-block;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem;
-  text-align: left;
-  margin: 0.5rem;
-  background: #D6364D;
-  color: #BD293F;
-  font-size: .8rem; }
 
 p.detail {
   display: inline-block;

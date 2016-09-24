@@ -1,0 +1,38 @@
+.addContactForm {
+  display: flex;
+  background: #D6364D;
+  justify-content: center;
+}
+.form-control {
+  width: 100%;
+}
+.formButtons {
+  display: flex;
+  justify-content: center;
+  background: #D6364D;
+}
+.newContact {
+  margin: 1rem;
+}
+input[type="text"].addNew {
+  padding: .5rem;
+  border: none;
+  border-radius: .25rem;
+  font-size: .8rem;
+  margin: 1rem;
+}
+input[type="button"].addNew {
+  padding: .8rem 2.5rem;
+  border: .5px solid #fff;
+  background: #D6364D;
+  border-radius: .25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: .8rem;
+  color: #fff;
+  &:active,
+  &:hover,
+  &:focus {
+    background: #FA6F57;
+  }
+}

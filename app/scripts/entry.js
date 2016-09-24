@@ -25,7 +25,10 @@ if (sessionStorage.session){
 Backbone.history.start()
 
 if (!session.username) {
-  router.navigate('login', {trigger:true})
+  router.navigate('login', {trigger: true})
+}
+if (JSON.parse(sessionStorage.session).authtoken) {
+  router.navigate('app', {trigger: true})
 }
 // if there is no username stored in session model, route to `login`
 

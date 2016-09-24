@@ -1,0 +1,35 @@
+.addContactForm {
+  display: flex;
+  background: #D6364D;
+  justify-content: center;
+}
+.form-control {
+  width: 100%;
+}
+.formButtons {
+  display: flex;
+  justify-content: center;
+  background: #D6364D;
+}
+.newContact {
+  margin: 1rem;
+}
+input[type="text"] {
+  padding: .5rem;
+  border: none;
+  border-radius: .25rem;
+  font-size: .8rem;
+  margin: 1rem;
+}
+input[type="button"] {
+  padding: .8rem 2.5rem;
+  border: none;
+  border-radius: .25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: .8rem;
+  &:active,
+  &:focus {
+    background: #FA6F57;
+  }
+}
