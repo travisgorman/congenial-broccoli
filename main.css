@@ -9,7 +9,8 @@
 .formButtons {
   display: flex;
   justify-content: center;
-  background: #D6364D; }
+  background: #D6364D;
+  padding-bottom: 2rem; }
 
 .newContact {
   margin: 1rem; }
@@ -34,7 +35,7 @@ input[type="button"].addNew {
     background: #FA6F57; }
 
 main.login {
-  background: #2ecc71;
+  background: #D6364D;
   background-size: cover;
   font-family: "Roboto"; }
 
@@ -45,7 +46,6 @@ main.login::before {
   top: 0;
   left: 0;
   background: #2ecc71;
-  background: rgba(46, 204, 113, 0.8);
   width: 100%;
   height: 100%; }
 
