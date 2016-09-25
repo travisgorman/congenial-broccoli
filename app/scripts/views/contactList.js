@@ -11,7 +11,7 @@ function contactList() {
     <div id="contacts">
       <main class="contact-list">
       </main>
-    </div>>
+    </div>
     `)
   function renderContact(contact) {
       let $contact = $(`
