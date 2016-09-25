@@ -12,4 +12,4 @@ contacts list app made with Backbone
 ## Features to add
 * edit contact details
 * delete contact
-* 
+* add media queries/breakpoints to collapse contact detials
