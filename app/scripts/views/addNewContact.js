@@ -7,7 +7,7 @@ import contacts from '../collections/contacts'
 
 function addContact() {
   let $addContact = $(`
-    <div className="addContact">
+    <div class="addContact">
       <form class="addContactForm">
         <div class="form-group newContact">
           <input id="name" type="text" class="form-control addNew" placeholder="Name" />
