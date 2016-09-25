@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'form';
 @import 'login';
+@import 'header';
+@import 'contacts';
 
 * {
   font-family: sans-serif;
@@ -8,64 +10,10 @@
   list-style-type: none;
 }
 
-.loginForm, .signupForm {
-  width: 400px;
+html, body, .container {
+  background: $primary;
 }
 
-header {
-  display: flex;
-  background: #7FB1B1;
-  width: 100%;
-  height: 4rem;
-}
 
-h1 {
-  flex-grow: 4;
-  text-align: center;
-  padding-top: 1rem;
-  color: #A1CECB;
-}
 
-.logoutBtn, .addNewBtn {
-  background: #A1CECB;
-  border: none;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #7FB1B1;
-  cursor: pointer;
-  &:hover{
-    background: #bae7e4;
-    cursor: pointer;
-  }
-  &:active,
-  &:focus {
-    border: none;
-  }
-}
 
-main {
-  height: 100vh;
-  background: #D6364D;
-  padding-top:  2rem;
-}
-
-.contact {
-  display: flex;
-  width: 80%;
-  margin: 1.4rem auto;
-  padding: .75rem;
-  background: #BD293F;
-}
-
-p.detail {
-  display: inline-block;
-  font-family: Roboto;
-  width: 100%;
-  margin: 0 auto;
-  padding: .5rem;
-  text-align: left;
-  margin: .5rem;
-  background: #D6364D;
-  color: #eee;
-  font-size: 8pt;
-}

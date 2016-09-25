@@ -2,7 +2,7 @@
 
 main.login {
   background: $primary;
-  background-size: cover;
+  // background-size: cover;
   font-family: "Roboto";
 }
 
@@ -12,7 +12,7 @@ main.login::before {
   position: fixed;
   top: 0;
   left: 0;
-  background: #2ecc71;
+  background: $primary;
   width: 100%;
   height: 100%;
 }
@@ -31,7 +31,7 @@ main.login::before {
 .form h2 {
   margin: 0 0 20px;
   line-height: 1;
-  color: #2ecc71;
+  color: $primary-dark;
   font-size: 18px;
   font-weight: 400;
 }
@@ -53,12 +53,12 @@ main.login::before {
 
 .form input:focus {
   color: #333;
-  border: 1px solid #2ecc71;
+  border: 1px solid $primary-dark;
 }
 
 .form button {
   cursor: pointer;
-  background: #2ecc71;
+  background: $primary-dark;
   width: 100%;
   padding: 10px 15px;
   border: 0;
@@ -70,12 +70,24 @@ main.login::before {
 }
 
 .form button:hover {
-  background: #27ae60;
+  background: $primary;
 }
 
-span.toSignup {
+.login p {
+  margin-top: 1rem;
   display: inline-block;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+p.toSignup {
+  display: inline-block;
+  text-align: right;
   cursor: pointer;
-  color: #2ECC71;
+  color: $primary-dark;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 700;
   margin-top: 1rem;
 }

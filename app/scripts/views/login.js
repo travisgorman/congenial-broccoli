@@ -14,8 +14,9 @@ function login(){
           <input id="lpass" name="password" placeholder="Password" type="password">
           <button id="loginBtn" class="btn"> Login </button>
         </form>
-        <p>Not a memeber yet? <span id="toSignup" class="toSignup">
-          Sign Up</span></p>
+        <p>Not a memeber yet? </p>
+        <p id="toSignup" class="toSignup">
+          Sign Up</p>
       </div>
     </main>
   `)  
