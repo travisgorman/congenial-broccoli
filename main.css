@@ -32,7 +32,7 @@ input[type="button"].addNew {
   font-size: .8rem;
   color: #fff; }
   input[type="button"].addNew:active, input[type="button"].addNew:hover, input[type="button"].addNew:focus {
-    background: #FA6F57; }
+    background: #BD293F; }
 
 main.login {
   background: #D6364D;
@@ -142,27 +142,29 @@ h1 {
 
 main.contact-list {
   height: 100vh;
-  background: #D6364D;
-  padding-top: 2rem; }
+  background: #D6364D; }
 
 .contact {
   display: flex;
   width: 80%;
-  margin: 1.4rem auto;
-  padding: .75rem;
-  background: #BD293F; }
+  margin: .5rem auto;
+  padding: .5rem;
+  background: #D6364D;
+  border-bottom: 1px solid #BD293F; }
 
-p.detail {
+.detail {
   display: inline-block;
   font-family: Roboto;
   width: 100%;
   margin: 0 auto;
-  padding: .5rem;
+  padding: .25rem;
   text-align: left;
-  margin: .5rem;
-  background: #D6364D;
-  color: #eee;
-  font-size: 8pt; }
+  margin: .25rem;
+  background: #eee;
+  color: #BD293F;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+  .detail p {
+    font-size: 8pt; }
 
 * {
   font-family: sans-serif;
