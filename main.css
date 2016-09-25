@@ -36,7 +36,6 @@ input[type="button"].addNew {
 
 main.login {
   background: #D6364D;
-  background-size: cover;
   font-family: "Roboto"; }
 
 main.login::before {
@@ -45,7 +44,7 @@ main.login::before {
   position: fixed;
   top: 0;
   left: 0;
-  background: #2ecc71;
+  background: #D6364D;
   width: 100%;
   height: 100%; }
 
@@ -62,7 +61,7 @@ main.login::before {
 .form h2 {
   margin: 0 0 20px;
   line-height: 1;
-  color: #2ecc71;
+  color: #BD293F;
   font-size: 18px;
   font-weight: 400; }
 
@@ -82,11 +81,11 @@ main.login::before {
 
 .form input:focus {
   color: #333;
-  border: 1px solid #2ecc71; }
+  border: 1px solid #BD293F; }
 
 .form button {
   cursor: pointer;
-  background: #2ecc71;
+  background: #BD293F;
   width: 100%;
   padding: 10px 15px;
   border: 0;
@@ -97,21 +96,24 @@ main.login::before {
   transition: 0.2s linear; }
 
 .form button:hover {
-  background: #27ae60; }
+  background: #D6364D; }
 
-span.toSignup {
+.login p {
+  margin-top: 1rem;
   display: inline-block;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 400; }
+
+p.toSignup {
+  display: inline-block;
+  text-align: right;
   cursor: pointer;
-  color: #2ECC71;
+  color: #BD293F;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 700;
   margin-top: 1rem; }
-
-* {
-  font-family: sans-serif;
-  margin: 0;
-  list-style-type: none; }
-
-.loginForm, .signupForm {
-  width: 400px; }
 
 header {
   display: flex;
@@ -125,20 +127,20 @@ h1 {
   padding-top: 1rem;
   color: #A1CECB; }
 
-.logoutBtn, .addNewBtn {
+.logoutBtn {
   background: #A1CECB;
   border: none;
   font-size: 1rem;
   font-weight: bold;
   color: #7FB1B1;
   cursor: pointer; }
-  .logoutBtn:hover, .addNewBtn:hover {
+  .logoutBtn:hover {
     background: #bae7e4;
     cursor: pointer; }
-  .logoutBtn:active, .logoutBtn:focus, .addNewBtn:active, .addNewBtn:focus {
+  .logoutBtn:active, .logoutBtn:focus {
     border: none; }
 
-main {
+main.contact-list {
   height: 100vh;
   background: #D6364D;
   padding-top: 2rem; }
@@ -161,5 +163,13 @@ p.detail {
   background: #D6364D;
   color: #eee;
   font-size: 8pt; }
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  list-style-type: none; }
+
+html, body, .container {
+  background: #D6364D; }
 
 /*# sourceMappingURL=main.css.map */
