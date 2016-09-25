@@ -1,4 +1,5 @@
-.addContact {}
+@import 'variables';
+
 .addContactForm {
   display: flex;
   background: #D6364D;
@@ -35,6 +36,6 @@ input[type="button"].addNew {
   &:active,
   &:hover,
   &:focus {
-    background: #FA6F57;
+    background: $primary-dark;
   }
 }

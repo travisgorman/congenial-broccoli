@@ -1,93 +1,85 @@
 @import 'variables';
 
-main.signup {
+.signup {
   background: $primary;
-  // background-size: cover;
   font-family: "Roboto";
+  &:before {
+    z-index: -1;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $primary;
+    width: 100%;
+    height: 100%;
+  }
+    .form {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: #fff;
+      width: 285px;
+      margin: -8.75rem 0 0 -11.375rem;
+      padding: 2.5rem;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    h2 {
+      margin: 0 0 20px;
+      line-height: 1;
+      color: $primary-dark;
+      font-size: 18px;
+      font-weight: 400;
+    }
+    input {
+      outline: none;
+      display: block;
+      width: 100%;
+      margin: 0 0 20px;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      color: #ccc;
+      font-family: "Roboto";
+      box-sizing: border-box;
+      font-size: 14px;
+      font-wieght: 400;
+      transition: 0.2s linear;
+      &:focus {
+        color: #333;
+        border: 1px solid $primary-dark;
+      }
+    }
+    button {
+      cursor: pointer;
+      background: $primary-dark;
+      width: 100%;
+      padding: 10px 15px;
+      border: 0;
+      color: #fff;
+      font-family: "Roboto";
+      font-size: 14px;
+      font-weight: 400;
+      transition: 0.2s linear;
+      &:hover {
+        background: $primary;
+      }
+    }
+    p {
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: "Roboto";
+      font-size: 14px;
+      font-weight: 400;
+    }
+    .toLogin {
+      display: inline-block;
+      text-align: right;
+      cursor: pointer;
+      color: $primary-dark;
+      font-family: "Roboto";
+      font-size: 14px;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+  }
 }
 
-main.signup::before {
-  z-index: -1;
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: $primary;
-  width: 100%;
-  height: 100%;
-}
 
-.form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background: #fff;
-  width: 285px;
-  margin: -8.75rem 0 0 -11.375rem;
-  padding: 2.5rem;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-}
-
-.form h2 {
-  margin: 0 0 20px;
-  line-height: 1;
-  color: $primary-dark;
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.form input {
-  outline: none;
-  display: block;
-  width: 100%;
-  margin: 0 0 20px;
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  color: #ccc;
-  font-family: "Roboto";
-  box-sizing: border-box;
-  font-size: 14px;
-  font-wieght: 400;
-  transition: 0.2s linear;
-}
-
-.form input:focus {
-  color: #333;
-  border: 1px solid $primary-dark;
-}
-
-.form button {
-  cursor: pointer;
-  background: $primary-dark;
-  width: 100%;
-  padding: 10px 15px;
-  border: 0;
-  color: #fff;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-  transition: 0.2s linear;
-}
-
-.form button:hover {
-  background: $primary;
-}
-
-.signup p {
-  margin-top: 1rem;
-  display: inline-block;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-}
-
-p.toLogin {
-  display: inline-block;
-  text-align: right;
-  cursor: pointer;
-  color: $primary-dark;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: 1rem;
-}

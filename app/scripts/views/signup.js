@@ -15,8 +15,9 @@ function signup(){
           <input id="pw2" name="password" placeholder="Confirm Password" type="password">
           <button id="signupBtn" class="btn"> Sign Up </button>
         </form>
-        <p>Already a Member? <span id="toLogin" class="toLogin">
-          Login </span></p>
+        <p>Already a member? </p>
+        <p id="toLogin" class="toLogin">
+          Log In</p>
       </div>
     </main>
   `)
